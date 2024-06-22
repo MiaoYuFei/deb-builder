@@ -8,8 +8,10 @@ name: Docker
 on:
   push:
     branches: [ "main" ]
+    paths: [ "Dockerfile", "deb-builder.sh", "docker-entrypoint.sh" ]
   pull_request:
     branches: [ "main" ]
+    paths: [ "Dockerfile", "deb-builder.sh", "docker-entrypoint.sh" ]
 
 env:
   REGISTRY: docker.io
