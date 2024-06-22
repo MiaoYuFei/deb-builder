@@ -7,9 +7,9 @@ name: Docker
 
 on:
   push:
-    branches: [ "main", "ubuntu/focal", "ubuntu/jammy", "ubuntu/noble" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "main", "ubuntu/focal", "ubuntu/jammy", "ubuntu/noble" ]
+    branches: [ "main" ]
 
 env:
   REGISTRY: docker.io
