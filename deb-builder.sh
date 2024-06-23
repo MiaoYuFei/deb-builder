@@ -13,7 +13,6 @@ mk-build-deps --install --remove --tool 'apt-get -y --no-install-recommends'
 debuild -b -uc -us
 
 mkdir -p /build/output
-mv /build/*.deb /build/output/
-mv /build/*.ddeb /build/output/
+mv /build/*.deb /build/*.ddeb /build/*.build /build/*.buildinfo /build/*.changes /build/output/
 
 exit 0
