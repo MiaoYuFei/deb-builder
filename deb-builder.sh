@@ -9,7 +9,7 @@ fi
 
 cd /build/src
 
-mk-build-deps --install --remove --tool 'apt-get -y --no-install-recommends'
+mk-build-deps --install --remove
 debuild -b -uc -us
 
 mkdir -p /build/output
